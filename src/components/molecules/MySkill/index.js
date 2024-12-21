@@ -1,5 +1,4 @@
 import React from "react";
-import Lottie from "react-lottie";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -7,7 +6,6 @@ import {
   FaReact,
   FaBootstrap,
   FaGithub,
-
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -17,6 +15,7 @@ import {
   SiMysql,
   SiFirebase,
 } from "react-icons/si";
+import { Player } from "@lottiefiles/react-lottie-player";
 import man from "../../../assets/man.json";
 
 const MySkill = () => {
@@ -45,21 +44,12 @@ const MySkill = () => {
     },
   ];
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: man,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   return (
     <div className="pt-24">
       <h1 className="text-4xl font-semibold drop-shadow-md text-center mb-8">
         My <span className="text-primary">Skills</span>
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-evenly my-8">
-
         <div>
           <h2 className="text-cyan-500 text-xl font-semibold">Languages:</h2>
           <div className="flex flex-wrap mb-4">
@@ -106,7 +96,13 @@ const MySkill = () => {
           </div>
         </div>
         <div>
-          <Lottie options={defaultOptions} height={400} width={360} />
+          {/* Updated Lottie Animation using Player */}
+          <Player
+            autoplay
+            loop
+            src={man}
+            style={{ height: "400px", width: "360px" }}
+          />
         </div>
       </div>
     </div>

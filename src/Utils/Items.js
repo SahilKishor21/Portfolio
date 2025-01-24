@@ -78,8 +78,44 @@ const Items = [
     liveLink: "https://github.com/SahilKishor21/WorkQueue",
     codeLink: "https://github.com/SahilKishor21/WorkQueue",
   },
+
   {
     id: 3,
+    mainImage: "https://res.cloudinary.com/djqkofsv0/image/upload/v1734865976/Screenshot_2024-12-22_164029_o5amoe.png",
+    img: [
+      "https://res.cloudinary.com/djqkofsv0/image/upload/v1734865976/Screenshot_2024-12-22_164029_o5amoe.png",
+      "https://res.cloudinary.com/djqkofsv0/image/upload/v1734865974/Screenshot_2024-12-22_164134_d7dra0.png",
+      "https://res.cloudinary.com/djqkofsv0/image/upload/v1734866166/Screenshot_2024-12-22_164535_fxcp3z.png",
+    ],
+    features: [
+      "Admin dashboard",
+      "user dashboard",
+      "User Registration and Login",
+      "Project Management tool",
+      "Collaborative features",
+      "Github Integration",
+      "Task Calendar",
+      "Task Management",
+    ],
+    technologies: [
+      "React",
+      "MUI",
+      "Tailwind CSS",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "REST API",
+    ],
+    title: "Project Pilot",
+    description:
+      "Project Pilot is a project management tool where the user can create the project and assign the task to the team member.",
+    category: "Project Managemnet Tool",
+    liveLink: "https://project-pilot-ten.vercel.app/",
+    codeLink: "https://github.com/07-ankur/ProjectPilot",
+  },
+
+  {
+    id: 4,
     mainImage: "https://res.cloudinary.com/djqkofsv0/image/upload/v1734743337/Screenshot_2024-12-21_063830_komrp5.png",
     img: [
       "https://res.cloudinary.com/djqkofsv0/image/upload/v1734740331/Screenshot_2024-12-21_054612_plgpym.png",
@@ -125,7 +161,7 @@ const Items = [
     codeLink: "https://github.com/SahilKishor21/connect-back",
   },
   {
-    id: 4,
+    id: 5,
     mainImage: "https://res.cloudinary.com/djqkofsv0/image/upload/v1734742226/Screenshot_2024-12-21_061426_jitm73.png",
     img: [
       "https://res.cloudinary.com/djqkofsv0/image/upload/v1734742226/Screenshot_2024-12-21_061426_jitm73.png",
@@ -159,7 +195,7 @@ const Items = [
     codeLink: "https://github.com/SahilKishor21/Sumz-AI",
   },
   {
-    id: 5,
+    id: 6,
     mainImage: "https://res.cloudinary.com/djqkofsv0/image/upload/v1734781076/Screenshot_2024-12-21_170615_up2czl.png",
     img: [
       "https://res.cloudinary.com/djqkofsv0/image/upload/v1734781076/Screenshot_2024-12-21_170615_up2czl.png",
@@ -198,36 +234,7 @@ const Items = [
     liveLink: "https://github.com/SahilKishor21/Secrets",
     codeLink: "https://github.com/SahilKishor21/Secrets",
   },
-  {
-    id: 6,
-    mainImage: "https://res.cloudinary.com/du541igfh/image/upload/v1682964283/Blog%20Portfolio%20Gilbert/Project/mario-jump-game/img-2_iwduig.png",
-    img: [
-      "https://res.cloudinary.com/du541igfh/image/upload/v1682964283/Blog%20Portfolio%20Gilbert/Project/mario-jump-game/img-1_gpiiro.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1682964283/Blog%20Portfolio%20Gilbert/Project/mario-jump-game/img-2_iwduig.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1682964283/Blog%20Portfolio%20Gilbert/Project/mario-jump-game/img-3_sk2hyn.png",
-    ],
-    features: [
-      "Mobile Responsive",
-      "Beautiful Animations",
-      "Rapid Controls",
-      "High Score",
-      "Mario Background Music",
-      "Jump & Game Over Sound Effect",
-    ],
-    technologies: [
-      "React",
-      "CSS",
-      "React Hooks",
-      "React Router",
-      "React Redux",
-    ],
-    title: "Mario Jump",
-    description:
-      "Mario Jump is an endless running game inspired by the famous Google Chrome's T-Rex Dinosaur Game 🦖. The game is built entirely with ReactJS ⚛ and Redux Toolkit 🔧.",
-    category: "game",
-    liveLink: "https://mariojumpp.vercel.app/",
-    codeLink: "https://github.com/berthutapea/mario-jump-game",
-  },
+ 
 ];
 
 export default Items;

@@ -4,12 +4,21 @@ import { FaDownload } from "react-icons/fa";
 import { RiFolderInfoFill } from "react-icons/ri";
 import TypeAnimation from "react-type-animation";
 import { motion } from "framer-motion";
+import Lottie from "react-lottie";
 import coding from "../../../assets/coding.json";
 import "../../../pages/shared/Shared.css";
 import { SecondaryBtn } from "../../../components";
-import { Player } from "@lottiefiles/react-lottie-player";
+
 
 const Banner = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: coding,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className="parent min-h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between">
       <motion.div
@@ -17,12 +26,8 @@ const Banner = () => {
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">
-          Hello, I'm
-        </h2>
-        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%]">
-          Sahil Kishor
-        </h1>
+        <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">Hello, I'm</h2>
+        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%]">Sahil Kishor</h1>
         <div className="my-4">
           <TypeAnimation
             className="text-2xl text-primary font-bold translate-y-[-80%] sm:translate-y-[-0%]"
@@ -40,19 +45,19 @@ const Banner = () => {
           />
         </div>
         <p className="text-neutral max-w-xl mb-6 font-medium translate-y-[-20%] sm:translate-y-[-0%]">
-          As a MERN stack developer, I am committed to building high-quality web
+          As a Full stack developer, I am committed to building high-quality web
           applications that meet the needs of my clients. With years of
           experience in full-stack web development, I specialize in using
-          React.js, Next js, MongoDB, Express.js, and Node.js to create scalable
-          and robust web applications. I am very passionate about my work and
-          dedicated to exploring New Tools And Technologies.
+          React.js, Next js, MongoDB, Express.js, and Node.js to
+          create scalable and robust web applications.
+          I am very passionate to my work and dedicated
+          to explore New Tools And Technologies. 
         </p>
 
         <div className="flex items-center translate-y-[-60%] sm:translate-y-[-0%]">
           <a
             href="https://drive.google.com/file/d/1arBC3MZ_XDHOKUEWXJxEtZL0KVDq1Lir/view?usp=drivesdk"
-            target="_blank"
-            rel="noopener noreferrer"
+            target="blank"
           >
             <button className="primary-button">
               <span>My Resume</span>
@@ -77,15 +82,11 @@ const Banner = () => {
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
       >
-        <Player
-          autoplay
-          loop
-          src={coding}
-          style={{ height: "90%", width: "90%" }}
-        />
+        <Lottie options={defaultOptions} height="90%" width="90%" />
       </motion.div>
     </div>
   );
 };
 
 export default Banner;
+

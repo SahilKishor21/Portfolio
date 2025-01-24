@@ -85,9 +85,8 @@ const Footer = () => {
               className="text-primary hover:underline"
               target="blank"
             >
-              Sahil Kishor
+              Sahil 
             </a>
-            {" "} with ❤️
           </p>
         </div>
       </footer>

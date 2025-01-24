@@ -1,4 +1,5 @@
 import React from "react";
+import Lottie from "react-lottie";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -6,50 +7,79 @@ import {
   FaReact,
   FaBootstrap,
   FaGithub,
+
 } from "react-icons/fa";
 import {
   SiJavascript,
   SiTailwindcss,
+  SiDocker,
+  SiCplusplus,
+  SiNextdotjs,
   SiExpress,
   SiMongodb,
+  SiPrisma,
+  SiPython,
+  SiKubernetes,
+  SiMaterialui,
   SiMysql,
+  SiPostman,
   SiFirebase,
 } from "react-icons/si";
-import { Player } from "@lottiefiles/react-lottie-player";
 import man from "../../../assets/man.json";
 
 const MySkill = () => {
   const languages = [
+    { title: "C++", icon: <SiCplusplus className="text-blue-600" /> },
     { title: "HTML", icon: <FaHtml5 className="text-orange-600" /> },
     { title: "CSS", icon: <FaCss3Alt className="text-blue-400" /> },
     {
       title: "JavaScript",
       icon: <SiJavascript className="text-yellow-500 rounded" />,
     },
+    { title: "Python", icon: <SiPython className="text-blue-500" /> },
     { title: "NodeJS", icon: <FaNodeJs className="text-green-600" /> },
+
+
   ];
   const frameworks = [
     { title: "React", icon: <FaReact className="text-cyan-400" /> },
+    { title: "NextJS", icon: <SiNextdotjs className="text-black" /> },
     { title: "Bootstrap", icon: <FaBootstrap className="text-indigo-600" /> },
+    { title: "MaterialUI", icon: <SiMaterialui className="text-blue-500" /> },
     { title: "Tailwind", icon: <SiTailwindcss className="text-cyan-400" /> },
     { title: "ExpressJS", icon: <SiExpress className="text-neutral" /> },
+    { title: "Prisma", icon: <SiPrisma className="text-black" /> },
+    
   ];
+  
   const tools = [
     { title: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
     { title: "GitHub", icon: <FaGithub className="text-black" /> },
     { title: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
+    { title: "Docker", icon: <SiDocker className="text-blue-500" /> },
+    { title: "Kubernetes", icon: <SiKubernetes className="text-blue-500" /> },
     {
       title: "Photoshop",
       icon: <SiMysql className="text-cyan-800" />,
     },
+    { title: "Postman", icon: <SiPostman className="text-orange-500" /> },
   ];
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: man,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className="pt-24">
       <h1 className="text-4xl font-semibold drop-shadow-md text-center mb-8">
         My <span className="text-primary">Skills</span>
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-evenly my-8">
+
         <div>
           <h2 className="text-cyan-500 text-xl font-semibold">Languages:</h2>
           <div className="flex flex-wrap mb-4">
@@ -96,13 +126,7 @@ const MySkill = () => {
           </div>
         </div>
         <div>
-          {/* Updated Lottie Animation using Player */}
-          <Player
-            autoplay
-            loop
-            src={man}
-            style={{ height: "400px", width: "360px" }}
-          />
+          <Lottie options={defaultOptions} height={400} width={360} />
         </div>
       </div>
     </div>

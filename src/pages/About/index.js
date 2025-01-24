@@ -70,7 +70,7 @@ const About = () => {
               />
             </div>
             <p className="text-neutral font-medium text-center translate-y-[-100%] sm:translate-y-[-0%] sm:mb-2 md:text-left">
-              As a MERN stack developer, I am committed to building high-quality
+              As a Full stack developer, I am committed to building high-quality
               web applications that meet the needs of my clients. With years of
               experience in full-stack web development, I specialize in using
               React.js, Next js, MySQL, MongoDB, Express.js, and Node.js to
@@ -103,7 +103,7 @@ const About = () => {
                 <span className="mr-2 text-primary">Address : </span>Patna, Bihar
               </h2>
               <a
-                href="https://drive.google.com/file/d/1arBC3MZ_XDHOKUEWXJxEtZL0KVDq1Lir/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1-bq_Q6mwHKn3MwfGYixtmkF8epapgjcd/view?usp=drive_link"
                 target="blank"
               >
                 <div className="flex justify-center md:justify-start translate-y-[60%] sm:translate-y-[-0%]">
